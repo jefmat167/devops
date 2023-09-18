@@ -148,7 +148,7 @@ $blog_details = get_site();
 			echo '<p class="lead-in">';
 			if ( '' === $signup->domain . $signup->path ) {
 				printf(
-					/* translators: 1: Login URL, 2: Username, 3: User email address, 4: Lost password URL. */
+					/* translators: 1: Login URL, 2: Username, 3: User's email address, 4: Lost password URL. */
 					__( 'Your account has been activated. You may now <a href="%1$s">log in</a> to the site using your chosen username of &#8220;%2$s&#8221;. Please check your email inbox at %3$s for your password and login instructions. If you do not receive an email, please check your junk or spam folder. If you still do not receive an email within an hour, you can <a href="%4$s">reset your password</a>.' ),
 					network_site_url( $blog_details->path . 'wp-login.php', 'login' ),
 					$signup->user_login,
