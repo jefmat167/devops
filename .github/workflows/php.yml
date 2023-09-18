@@ -25,9 +25,9 @@ jobs:
     - name: SSH into DigitalOcean VM and deploy
       uses: appleboy/ssh-action@master
       with:
-        host: ${{ secrets.DO_VM_HOST }}
-        username: ${{ secrets.DO_VM_USERNAME }}
-        key: ${{ secrets.DO_VM_SSH_KEY }}
+        host: ${{ secrets.DO_HOST }}
+        username: ${{ secrets.DO_USER }}
+        key: ${{ secrets.SSH_KEY}}
         script: |
           cd devops
           git pull origin main
