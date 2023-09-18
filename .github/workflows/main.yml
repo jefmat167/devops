@@ -26,5 +26,5 @@ jobs:
            script: |
             cd devops
             git pull origin main
-            # Add any build or database migration steps here
+            # Add any build or database migration steps here 
             sudo systemctl restart apache2
