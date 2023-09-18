@@ -96,7 +96,7 @@ if ( file_exists( ABSPATH . 'wp-config.php' ) ) {
 	) . '</p>';
 	$die .= '<p>' . sprintf(
 		/* translators: %s: wp-config.php */
-		__( "You can create a %s file through a web interface, but this doesn't work for all server setups. The safest way is to manually create the file." ),
+		__( "You can create a %s file through the web interface, but this doesn't work for all server setups. The safest way is to manually create the file." ),
 		'<code>wp-config.php</code>'
 	) . '</p>';
 	$die .= '<p><a href="' . $path . '" class="button button-large">' . __( 'Create a Configuration File' ) . '</a></p>';
